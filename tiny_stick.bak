@@ -515,7 +515,7 @@ U 1 1 5E2A39FD
 P 3650 3500
 F 0 "RV1" H 3583 3546 50  0000 R CNN
 F 1 "R_POT_US" H 3583 3455 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3299P_Horizontal" H 3650 3500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3650 3500 50  0001 C CNN
 F 3 "~" H 3650 3500 50  0001 C CNN
 	1    3650 3500
 	1    0    0    -1  
@@ -599,32 +599,26 @@ Wire Wire Line
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 5E2B65A1
-P 3800 7050
-F 0 "SW1" H 3800 7335 50  0000 C CNN
-F 1 "batt_switch" H 3800 7244 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3800 7050 50  0001 C CNN
-F 3 "~" H 3800 7050 50  0001 C CNN
-	1    3800 7050
+P 5100 5600
+F 0 "SW1" H 5100 5885 50  0000 C CNN
+F 1 "batt_switch" H 5100 5794 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5100 5600 50  0001 C CNN
+F 3 "~" H 5100 5600 50  0001 C CNN
+	1    5100 5600
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 3600 7150
-Wire Wire Line
-	3300 6950 3600 6950
+NoConn ~ 4900 5700
 $Comp
 L power:GND #PWR014
 U 1 1 5E2B9CE1
-P 3300 7400
-F 0 "#PWR014" H 3300 7150 50  0001 C CNN
-F 1 "GND" H 3305 7227 50  0000 C CNN
-F 2 "" H 3300 7400 50  0001 C CNN
-F 3 "" H 3300 7400 50  0001 C CNN
-	1    3300 7400
+P 5050 6300
+F 0 "#PWR014" H 5050 6050 50  0001 C CNN
+F 1 "GND" H 5055 6127 50  0000 C CNN
+F 2 "" H 5050 6300 50  0001 C CNN
+F 3 "" H 5050 6300 50  0001 C CNN
+	1    5050 6300
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3300 7250 3300 7400
-Wire Wire Line
-	4000 7050 4100 7050
 Wire Wire Line
 	1800 1250 2150 1250
 Wire Wire Line
@@ -667,17 +661,13 @@ U 1 1 5E2CB53E
 P 3900 5950
 F 0 "C9" H 4015 5996 50  0000 L CNN
 F 1 "C" H 4015 5905 50  0000 L CNN
-F 2 "" H 3938 5800 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T" H 3938 5800 50  0001 C CNN
 F 3 "~" H 3900 5950 50  0001 C CNN
 	1    3900 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3600 5800 3900 5800
-Text Label 4250 5800 0    50   ~ 0
-5v_in
-Wire Wire Line
-	3900 5800 4250 5800
 Connection ~ 3900 5800
 $Comp
 L power:GND #PWR017
@@ -706,50 +696,42 @@ Wire Wire Line
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5E2B60D9
-P 3300 7150
-F 0 "BT1" H 3418 7246 50  0000 L CNN
-F 1 "Battery_Cell" H 3418 7155 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Glenn1" V 3300 7210 50  0001 C CNN
-F 3 "~" V 3300 7210 50  0001 C CNN
-	1    3300 7150
+P 5050 6200
+F 0 "BT1" H 5168 6296 50  0000 L CNN
+F 1 "Battery_Cell" H 5168 6205 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Glenn1" V 5050 6260 50  0001 C CNN
+F 3 "~" V 5050 6260 50  0001 C CNN
+	1    5050 6200
 	-1   0    0    -1  
 $EndComp
-Text Label 4100 7050 0    50   ~ 0
-5v_coin
 $Comp
 L Connector_Generic:Conn_01x03 J4
 U 1 1 5E2FDFEA
-P 5700 6450
-F 0 "J4" H 5780 6492 50  0000 L CNN
-F 1 "pwr sel" H 5780 6401 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5700 6450 50  0001 C CNN
-F 3 "~" H 5700 6450 50  0001 C CNN
-	1    5700 6450
+P 5650 5900
+F 0 "J4" H 5730 5942 50  0000 L CNN
+F 1 "pwr sel" H 5730 5851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5650 5900 50  0001 C CNN
+F 3 "~" H 5650 5900 50  0001 C CNN
+	1    5650 5900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR013
 U 1 1 5E2FECF9
-P 5350 6150
-F 0 "#PWR013" H 5350 6000 50  0001 C CNN
-F 1 "+5V" H 5365 6323 50  0000 C CNN
-F 2 "" H 5350 6150 50  0001 C CNN
-F 3 "" H 5350 6150 50  0001 C CNN
-	1    5350 6150
+P 4700 5450
+F 0 "#PWR013" H 4700 5300 50  0001 C CNN
+F 1 "+5V" H 4715 5623 50  0000 C CNN
+F 2 "" H 4700 5450 50  0001 C CNN
+F 3 "" H 4700 5450 50  0001 C CNN
+	1    4700 5450
 	1    0    0    -1  
 $EndComp
-Text Label 5100 6350 0    50   ~ 0
-5v_in
-Text Label 5100 6550 0    50   ~ 0
-5v_coin
 Wire Wire Line
-	5100 6350 5500 6350
+	5050 6000 5450 6000
 Wire Wire Line
-	5100 6550 5500 6550
+	5300 5600 5300 5900
 Wire Wire Line
-	5350 6150 5350 6450
-Wire Wire Line
-	5350 6450 5500 6450
+	5300 5900 5450 5900
 Wire Wire Line
 	3000 5800 2800 5800
 $Comp
@@ -768,4 +750,10 @@ Wire Wire Line
 Connection ~ 2800 5800
 Wire Wire Line
 	2800 5800 2650 5800
+Wire Wire Line
+	4700 5450 4700 5500
+Wire Wire Line
+	4700 5500 4900 5500
+Wire Wire Line
+	3900 5800 5450 5800
 $EndSCHEMATC

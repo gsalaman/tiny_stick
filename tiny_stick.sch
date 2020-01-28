@@ -656,20 +656,6 @@ F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 3400 5550 50  0001 C C
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C9
-U 1 1 5E2CB53E
-P 3900 5950
-F 0 "C9" H 4015 5996 50  0000 L CNN
-F 1 "C" H 4015 5905 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T" H 3938 5800 50  0001 C CNN
-F 3 "~" H 3900 5950 50  0001 C CNN
-	1    3900 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 5800 3900 5800
-Connection ~ 3900 5800
-$Comp
 L power:GND #PWR017
 U 1 1 5E2D9B5E
 P 3300 6300
@@ -754,6 +740,20 @@ Wire Wire Line
 	4700 5450 4700 5500
 Wire Wire Line
 	4700 5500 4900 5500
+Wire Wire Line
+	3600 5800 3900 5800
+$Comp
+L Device:CP1 C9
+U 1 1 5E307CF7
+P 3900 5950
+F 0 "C9" H 4015 5996 50  0000 L CNN
+F 1 "CP1" H 4015 5905 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 3900 5950 50  0001 C CNN
+F 3 "~" H 3900 5950 50  0001 C CNN
+	1    3900 5950
+	1    0    0    -1  
+$EndComp
+Connection ~ 3900 5800
 Wire Wire Line
 	3900 5800 5450 5800
 $EndSCHEMATC
