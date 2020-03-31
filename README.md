@@ -1,5 +1,7 @@
-# tiny_stick
+# Tiny Stick
 Hardware design for a line of 8 surface-mount WS2812B LEDs
+
+![tinystick](https://user-images.githubusercontent.com/43499190/78037458-d35a0680-7328-11ea-9676-655453b6d2d9.jpg)
 
 ## Project Goals
 Test connections for multiple LEDs strung together.  Configurations:
